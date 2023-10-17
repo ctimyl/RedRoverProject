@@ -1,6 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 
 class BasePage:
 
@@ -18,13 +17,6 @@ class BasePage:
 
     def opened_url(self):
         return self.driver.current_url
-
-    # def not_be_shown(self, locator):
-    #     driver = self.driver.get(self.base_url)
-    #     element = locator
-    #     WebDriverWait(self.driver, 1).until_not(EC.visibility_of_element_located(element), "Can't load page")
-    #     return driver
-
     def is_element_not_displayed(self, locator):
         try:
             WebDriverWait(self.driver, 1).until_not(EC.visibility_of_element_located(locator))
