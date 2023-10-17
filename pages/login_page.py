@@ -6,6 +6,4 @@ class LoginPage:
     PASSWORD_INPUT = (By.XPATH, '//input[@data-test="password"]')
     LOGIN_BTN = (By.XPATH, '//input[@data-test="login-button"]')
 
-
-    LOGIN_ERROR = (By.XPATH, '//button[@class="error-button"]')
-
+    LOGIN_ERROR = (By.XPATH, '//*[@id="login_button_container"]/div/form/div[3]/h3')

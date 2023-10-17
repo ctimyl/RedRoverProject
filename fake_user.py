@@ -9,6 +9,7 @@ class FakeUserGenerator:
         self.last_name = self.fake.last_name()
         self.postcode = self.fake.postcode()
 
+
 def generate_fake_user():
     # Генерация пользовательских данных
     generated_user = FakeUserGenerator()
